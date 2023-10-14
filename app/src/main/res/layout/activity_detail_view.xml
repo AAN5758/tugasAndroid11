@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="nama"
+            type="String" />
+
+        <variable
+            name="sekolah"
+            type="String" />
+
+        <variable
+            name="kelas"
+            type="String" />
+
+        <variable
+            name="photo"
+            type="Integer" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DetailViewActivity">
+
+        <ImageView
+            imageSrc="@{photo}"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_270sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:contentDescription="@string/alfred" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@{nama}"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@{kelas}"
+            android:textSize="@dimen/_20ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@{sekolah}"
+            android:textSize="@dimen/_20ssp" />
+
+    </LinearLayout>
+
+</layout>
+
